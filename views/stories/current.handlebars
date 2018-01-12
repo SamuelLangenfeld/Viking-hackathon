@@ -1,0 +1,25 @@
+  <div>
+    <h1 class="story-title">{{story.title}}</h1>
+  </div>
+
+<div class="row">
+  <div id="sections" class="col-md-8 col-md-offset-2">
+    {{#each story.sections as |section|}}
+      <p class="section-body">{{section.body}}</p>
+      <p class="section-author">authored by: {{section.author}}</p>
+    {{/each}}
+  </div>
+</div>
+
+
+
+<div class="col-md-4 col-md-offset-4">
+  <h2>What happens next?</h2>
+  <form method="post" action="/stories/current">
+    <div class="form-group">
+    <textarea class="form-control" name="body" id="newSectionBody"></textarea>
+    </div>
+    <input type="hidden" name="author" value="{{username}}" id="newSectionAuthor">
+    <input type="submit" id="newSectionSubmit" class="btn btn-default">
+  </form>
+</div>

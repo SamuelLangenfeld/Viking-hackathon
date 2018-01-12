@@ -1,0 +1,16 @@
+{
+  "development":
+  {
+    "database": "story_collab_development",
+    "host": "localhost"
+  },
+  "test":
+  {
+    "database": "story_collab_development_test",
+    "host": "localhost"
+  },
+  "production":
+  {
+    "use_env_variable": "MONGODB_URI"
+  }
+}

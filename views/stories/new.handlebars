@@ -1,0 +1,15 @@
+<div class="col-md-4  col-md-offset-4">
+
+  <div class="page-title">Time to start a new story!</div>
+  <h4>Give it a title and decide how many parts the story should have</h4>
+
+  <form action="/stories/new" method="post">
+    <div class="form-group">
+      <label>Title</label><input  class="form-control" type="text" name="title" required>
+    </div>
+    <div class="form-group">
+      <label>Number of Parts</label><input class="form-control" type="number" min="1" max="10" name="maxSections" required>
+    </div>
+    <input type="submit">
+  </form>
+</div>

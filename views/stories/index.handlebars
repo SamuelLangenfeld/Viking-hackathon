@@ -1,0 +1,20 @@
+  <div>
+    <h1 class="story-title">Past Stories</h1>
+  </div>
+
+<div class="col-md-6 col-md-offset-3">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    {{#each stories as |story|}}
+      <tr>
+        <td><a href="/stories/{{story._id}}">{{story.title}}</a></td>
+        <td><a href="/stories/{{story._id}}">{{story.createdAt}}</a></td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
